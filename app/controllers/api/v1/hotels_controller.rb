@@ -9,7 +9,7 @@ module Api
 
       def show
         hotel = Hotel.find_by(slug: params[:slug])
-        render json: HotelSerializer.new(hotels, options).serializable_hash
+        render json: HotelSerializer.new(hotel, options).serializable_hash
       end
 
       def create
