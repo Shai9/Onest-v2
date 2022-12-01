@@ -1,6 +1,5 @@
-module Api
-  module V1
-    class ReviewsController < ApplicationController
-    end
+class PagesController < ActionController::API
+  def index
+    
   end
 end
