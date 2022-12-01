@@ -1,6 +1,6 @@
 puts 'Seeding data!'
 
-Hotel.create([
+hotels = Hotel.create([
   { 
     name: "Lotos Inn & Suites, Nairobi",
     image_url: "https://scontent.fnbo16-1.fna.fbcdn.net/v/t39.30808-6/301132171_481919267277439_9221096392396575226_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=a21K293odc8AX-YQ8q5&_nc_ht=scontent.fnbo16-1.fna&oh=00_AfDXEqSEFXtL1HCthbE0q6hJ01n-O-GRvCaIFIKSfIF8lw&oe=638DBCEF"
@@ -54,29 +54,29 @@ Hotel.create([
 
 reviews = Review.create([
   {
-    title : 'Great Hotel'
-    description : 'Enjoyed my stay'
-    score : '5'
-    hotel : hotel.last
+    title:'Great Hotel',
+    description:'Enjoyed my stay',
+    score: 5,
+    hotel: hotels.first
   },
   {
-    title : 'Super Experience'
-    description : 'Awesome food'
-    score : '4'
-    hotel : hotel.last
+    title:'Super Experience',
+    description:'Awesome food',
+    score: 4,
+    hotel: hotels.last
   },
   {
-    title : 'Excellent staff'
-    description : 'Super services'
-    score : '4'
-    hotel : hotel.second
+    title:'Excellent staff',
+    description:'Super services',
+    score: 4,
+    hotel: hotels.first
   },
   {
-    title : 'Awesome'
-    description : 'This is the place to be'
-    score : '4'
-    hotel : hotel.first
-  },
+    title: 'Awesome',
+    description:'This is the place to be',
+    score: 4,
+    hotel: hotels.last
+  }
 ])
 
 puts 'Seeded!'
