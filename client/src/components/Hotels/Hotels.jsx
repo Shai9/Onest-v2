@@ -1,9 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Hotels = () => {
-  return(
-    <div>This is the Hotels#index page for our app.</div>
+  const [hotels, setHotels] = useState([])
+
+  return (
+    <div className="home">
+      <div className="header">
+        <h1>ONEST</h1>
+        <p className="subheader">Honest, unbiased hotel reviews. Share your experience.</p>
+      </div>
+      <div className="grid">
+        HOTELS GRID GOES HERE
+      </div>
+    </div>
   )
 }
 
-export default Hotels
+export default Hotels 
