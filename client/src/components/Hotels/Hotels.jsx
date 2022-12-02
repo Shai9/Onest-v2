@@ -27,12 +27,12 @@ const Hotels = () => {
 
 
   return (
-    <div className="home">
-      <div className="header">
-        <h1>ONEST</h1>
-        <p className="subheader">Honest, unbiased hotel reviews. Share your experience.</p>
+    <div className="text-center max-w-screen-xl	mx-auto">
+      <div className="p-28 text-2xl">
+        <h1 className='text-6xl'>ONEST</h1>
+        <p>Honest, unbiased hotel reviews. Share your experience.</p>
       </div>
-      <div className="grid">
+      <div className="grid gap-4 grid-cols-4 grid-rows-3 wx-0 px-0">
         {grid}
       </div>
     </div>
